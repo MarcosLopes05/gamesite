@@ -1,0 +1,93 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hells Games</title>
+    <link rel="stylesheet" href="{% static 'styles/styles.css' %}">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <h1>Quest de Games</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="https://store.steampowered.com/?l=brazilian">Home</a></li>
+            <li><a href="https://store.steampowered.com/sale/franchise_final-fantasy">Promoção Final Fantasy</a></li>
+            <li><a href="https://www.valvesoftware.com/pt-br/about">Eles</a></li>
+            <li><a href="#carrinho">Carrinho</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section id="home" class="hero">
+        <h2>Bem-vindo as suas proximas missões !</h2>
+        <p>Os melhores jogos para todas as plataformas.</p>
+    </section>
+    <section id="produtos" class="produtos">
+        <h2>Nossos Jogos</h2>
+        <div class="produto">
+            <img src="{% static 'assets/img/eldenring.jpg' %}" alt="Jogo 1">
+            <h3>Elden Ring - PC</h3>
+            <p>Elden Ring é um jogo eletrônico de RPG de ação em terceira pessoa,
+                desenvolvido pela FromSoftware e publicado pela Bandai Namco Entertainment.</p>
+            <a href="https://store.steampowered.com/app/1245620/ELDEN_RING/">
+                 <button type="button" class="btn btn-primary"> Comprar </button>
+            </a>
+        </div>
+        <div class="produto">
+            <img src="{% static 'assets/img/demonsouls.jpg' %}" alt="Jogo 2">
+            <h3>Demons Souls - PS5</h3>
+            <p>Demon's Souls é um jogo eletrônico de RPG de ação desenvolvido
+                pela Bluepoint Games, com a assistência da Japan Studio, e publicado pela Sony Interactive
+                Entertainment.</p>
+            <a href="https://store.playstation.com/pt-br/product/UP9000-PPSA01342_00-DEMONSSOULS00000/" >
+                <button type="button" class="btn btn-primary"> Comprar </button>
+            </a>
+        </div>
+        <div class="produto">
+            <img src="{% static 'assets/img/bloodborne.jpg' %}" alt="Jogo 3">
+            <h3>Bloodborne - PS5 </h3>
+            <p>Bloodborne é um RPG eletrônico de ação produzido pela FromSoftware e publicado pela Sony Computer
+                Entertainment a 24 de Março de 2015 em exclusivo para a PlayStation 4,
+                sendo o quarto game da serie Souls.</p>
+            <a href="https://www.playstation.com/pt-br/games/bloodborne/">
+                <button type="button" class="btn btn-primary"> Comprar </button>
+            </a>
+        </div>
+        <div class="produto">
+            <img src="{% static 'assets/img/sekiro.jpg' %}" alt="Jogo 4">
+            <h3>Sekiro - PC</h3>
+            <p>Sekiro: Shadows Die Twice é um jogo eletrônico de ação-aventura desenvolvido pela FromSoftware e
+                publicado pela Activision.</p>
+            <a href="https://store.steampowered.com/app/814380/Sekiro_Shadows_Die_Twice__GOTY_Edition/">
+                 <button type="button" class="btn btn-primary"> Comprar </button>
+            </a>
+        </div>
+        <div class="produto">
+            <img src="{% static 'assets/img/finalfantasy7r.jpg' %}" alt="Jogo 5">
+            <h3>Final Fantasy VII Remake - PC</h3>
+            <p>Final Fantasy VII Remake é um jogo eletrônico de RPG de ação desenvolvido e publicado pela Square Enix. É
+                um título da série Final Fantasy e uma recriação de Final Fantasy VII, tendo sido lançado para
+                PlayStation 4 em 10 de abril de 2020.</p>
+            <a href="https://store.steampowered.com/app/1462040/FINAL_FANTASY_VII_REMAKE_INTERGRADE/">
+                 <button type="button" class="btn btn-primary"> Comprar </button>
+            </a>
+        </div>
+        <div class="produto">
+            <img src="{% static 'assets/img/codbop6.jpg' %}" alt="Jogo 6">
+            <h3>Pré venda: Call of Duty Blackops 6</h3>
+            <p>Requisitos Mínimo: 300GB de SSD livres / Requisito Recomendável: 500 GB de SSD livres</p>
+            <a href="https://store.steampowered.com/app/2933620/Call_of_Duty_Black_Ops_6/">
+                 <button type="button" class="btn btn-primary"> Comprar </button>
+            </a>
+        </div>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2024. Todos os direitos reservados.</p>
+</footer>
+</body>
+</html>
